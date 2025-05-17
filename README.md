@@ -1,6 +1,6 @@
 # 🏫 Sistema de Gestão Escolar - API Spring Boot + Frontend
 
-[![Java](https://img.shields.io/badge/Java-17%2B-blue)](https://openjdk.org/)
+[![Java](https://img.shields.io/badge/Java-21%2B-blue)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1%2B-brightgreen)](https://spring.io/projects/spring-boot)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-lightgrey)](https://github.com/seu-usuario/nome-do-repositorio)
 
