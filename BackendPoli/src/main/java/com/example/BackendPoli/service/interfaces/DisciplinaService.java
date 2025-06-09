@@ -8,6 +8,11 @@ public interface DisciplinaService {
     DisciplinaResponse criarDisciplina(DisciplinaRequest request);
     DisciplinaResponse atualizarDisciplina(Long id, DisciplinaRequest request);
     void apagarDisciplina(Long id);
+
+    DisciplinaResponse atualizarDisciplina(Long id, Disciplina request);
+
+    void deletarDisciplina(Long id);
+
     DisciplinaResponse buscarPorId(Long id);
     List<DisciplinaResponse> listarTodas();
 }

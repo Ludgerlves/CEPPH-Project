@@ -8,4 +8,8 @@ import lombok.Data;
 public class DisciplinaResponse {
     private Long id;
     private String nome;
+    public DisciplinaResponse(){
+        this.id= id;
+        this.nome= nome;
+    }
 }
