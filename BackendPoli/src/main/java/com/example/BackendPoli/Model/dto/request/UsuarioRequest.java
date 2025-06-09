@@ -25,4 +25,6 @@ public class UsuarioRequest {
     @NotNull
     private PerfilUsuario perfil;
 
+    @NotNull
+    private String senha;
 }

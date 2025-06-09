@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/admin/users")
 @RequiredArgsConstructor
 @PreAuthorize("hasRole('ADMIN')")
-public class UsuarioController {
+public class UsuarioController{
     private final UsuarioService usuarioService;
 
     @GetMapping
