@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
 @RequestMapping("/api/admin/turmas")
 @PreAuthorize("hasRole('ADMIN')")
 @RequiredArgsConstructor
@@ -18,6 +17,10 @@ import java.util.List;
 public class TurmasController {
 
     private final TurmaService turmaService;
+
+    public TurmasController(TurmaService turmaService) {
+        this.turmaService = turmaService;
+    }
 
     @PostMapping
     public ResponseEntity<TurmaResponse> criar(@RequestBody TurmaRequest request){

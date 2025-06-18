@@ -19,6 +19,10 @@ public class DisciplinaController {
 
     private final DisciplinaService disciplinaService;
 
+    public DisciplinaController(DisciplinaService disciplinaService) {
+        this.disciplinaService = disciplinaService;
+    }
+
     @PostMapping
     public ResponseEntity<DisciplinaResponse> criar(@RequestBody DisciplinaRequest request){
         return ResponseEntity.ok(disciplinaService.criarDisciplina(request));

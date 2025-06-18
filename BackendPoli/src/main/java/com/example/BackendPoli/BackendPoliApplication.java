@@ -8,6 +8,8 @@ public class BackendPoliApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackendPoliApplication.class, args);
+	} {
+
 	}
 
 }
