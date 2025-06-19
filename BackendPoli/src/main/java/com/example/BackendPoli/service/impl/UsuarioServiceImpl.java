@@ -14,17 +14,17 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public abstract class UsuarioServiceImpl implements UsuarioService {
+public class UsuarioServiceImpl implements UsuarioService {
 
     private final UsuarioRepository usuarioRepository;
-    private final PasswordEncoder passwordEncoder;
+    //private final PasswordEncoder passwordEncoder;
 
     @Override
     public UsuarioResponse criarUsuario(UsuarioRequest request) {
         Usuario usuario = Usuario.builder()
                 .nome(request.getNome())
                 .email(request.getEmail())
-              .senha(passwordEncoder.encode(request.getSenha()))
+              .senha(request.getSenha())
                 .numero_passe(request.getNumero_passe())
                 .perfil(request.getPerfil())
                 .build();
@@ -38,7 +38,7 @@ public abstract class UsuarioServiceImpl implements UsuarioService {
                 .orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
         usuario.setNome(request.getNome());
         usuario.setEmail(request.getEmail());
-         usuario.setSenha(passwordEncoder.encode(request.getSenha()));
+         usuario.setSenha(request.getSenha());
         usuario.setPerfil(request.getPerfil());
         usuarioRepository.save(usuario);
         return mapToResponse(usuario);

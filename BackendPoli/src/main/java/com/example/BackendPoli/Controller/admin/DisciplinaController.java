@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/admin/disciplinas")
 @PreAuthorize("hasRole('ADMIN')")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 
 public class DisciplinaController {
 
@@ -35,7 +35,7 @@ public class DisciplinaController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<DisciplinaResponse> apagar(@PathVariable Long id){
-        disciplinaService.deletarDisciplina(id);
+        disciplinaService.apagarDisciplina(id);
         return ResponseEntity.noContent().build();
     }
 

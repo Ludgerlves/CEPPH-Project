@@ -6,12 +6,12 @@ import com.example.BackendPoli.Model.entity.Disciplina;
 import java.util.List;
 public interface DisciplinaService {
     DisciplinaResponse criarDisciplina(DisciplinaRequest request);
-    DisciplinaResponse atualizarDisciplina(Long id, DisciplinaRequest request);
+    //DisciplinaResponse atualizarDisciplina(Long id, DisciplinaRequest request);
     void apagarDisciplina(Long id);
 
-    DisciplinaResponse atualizarDisciplina(Long id, Disciplina request);
+    DisciplinaResponse atualizarDisciplina(Long id, DisciplinaRequest request);
 
-    void deletarDisciplina(Long id);
+    //void deletarDisciplina(Long id);
 
     DisciplinaResponse buscarPorId(Long id);
     List<DisciplinaResponse> listarTodas();

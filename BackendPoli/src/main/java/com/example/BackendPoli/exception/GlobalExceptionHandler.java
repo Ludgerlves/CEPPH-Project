@@ -1,4 +1,4 @@
-package com.example.BackendPoli.exceptions;
+package com.example.BackendPoli.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,6 +6,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
+import com.example.BackendPoli.exception.*;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
@@ -29,7 +30,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(ValidationException.class)
     public ResponseEntity<Object> handleValidacao(
-            ValidationException ex, WebRequest request) {
+            com.example.BackendPoli.exception.ValidationException ex, WebRequest request) {
         return criarRespostaErro(HttpStatus.BAD_REQUEST, ex, request);
     }
 

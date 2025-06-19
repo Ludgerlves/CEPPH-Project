@@ -1,4 +1,4 @@
-package com.example.BackendPoli.exceptions;
+package com.example.BackendPoli.exception;
 
 /**
  * Exception lançada quando há erro de validação.

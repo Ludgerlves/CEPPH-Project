@@ -1,4 +1,4 @@
-package com.example.BackendPoli.controller;
+/*package com.example.BackendPoli.controller;
 
 import com.example.BackendPoli.Model.dto.response.TurmaResponse;
 import com.example.BackendPoli.service.TurmaService;
@@ -21,3 +21,4 @@ public class TurmasController {
 
     // Outros métodos mantidos...
 }
+*/

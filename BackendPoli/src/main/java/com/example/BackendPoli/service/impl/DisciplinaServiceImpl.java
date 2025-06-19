@@ -14,11 +14,11 @@ import java.util.stream.Collectors;
 
 import static java.util.Arrays.stream;
 
-@Builder
+//@Builder
 
 @Service
 @RequiredArgsConstructor
-public abstract class DisciplinaServiceImpl implements DisciplinaService {
+public class DisciplinaServiceImpl implements DisciplinaService {
     private final DisciplinaRepository disciplinaRepository;
 
     @Override
@@ -31,15 +31,16 @@ public abstract class DisciplinaServiceImpl implements DisciplinaService {
     }
 
     @Override
-    public DisciplinaResponse atualizarDisciplina(Long id, Disciplina request){
+    public DisciplinaResponse atualizarDisciplina(Long id, DisciplinaRequest request){
         Disciplina disciplina = disciplinaRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("Disciplina não encontrada"));
         disciplina.setNomeDisciplina(request.getNomeDisciplina());
+        disciplinaRepository.save(disciplina);
         return mapToResponse(disciplina);
     }
 
     @Override
-    public void deletarDisciplina(Long id){
+    public void apagarDisciplina(Long id){
         disciplinaRepository.deleteById(id);
     }
 
@@ -49,7 +50,8 @@ public abstract class DisciplinaServiceImpl implements DisciplinaService {
             .orElseThrow(()-> new RuntimeException("Disciplina não encontrada"));
             return mapToResponse(disciplina);
     }
-    public List<DisciplinaResponse> listarTodos(){
+    @Override
+    public List<DisciplinaResponse> listarTodas(){
         return disciplinaRepository.findAll()
                 .stream()
                 .map(this::mapToResponse)

@@ -12,7 +12,7 @@ import java.util.List;
 
 @RequestMapping("/api/admin/turmas")
 @PreAuthorize("hasRole('ADMIN')")
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 
 public class TurmasController {
 

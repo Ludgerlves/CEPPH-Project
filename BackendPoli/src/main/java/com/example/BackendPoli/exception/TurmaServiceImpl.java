@@ -1,4 +1,4 @@
-// Atualizar BuscarPorId
+/*// Atualizar BuscarPorId
 @Override
 public TurmaResponse BuscarPorId(Long id) {
     Turma turma = turmaRepository.findById(id)
@@ -19,3 +19,4 @@ public TurmaResponse mapToResponse(Turma turma) {
     response.setNivelEnsino(turma.getNivelEnsino());
     return response;
 }
+*/

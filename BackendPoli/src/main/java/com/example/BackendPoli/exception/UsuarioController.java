@@ -1,4 +1,4 @@
-@PostMapping
+/*@PostMapping
 public ResponseEntity<UsuarioResponse> criarUsuario(@Valid @RequestBody UsuarioRequest request) {
     try {
         return ResponseEntity.ok(usuarioService.criarUsuario(request));
@@ -6,3 +6,4 @@ public ResponseEntity<UsuarioResponse> criarUsuario(@Valid @RequestBody UsuarioR
         throw ex; // Será tratado pelo GlobalExceptionHandler
     }
 }
+*/

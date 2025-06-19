@@ -1,8 +1,6 @@
-package com.example.BackendPoli.exceptions;
+package com.example.BackendPoli.exception;
 
-/**
- * Classe base para todas as exceptions customizadas da aplicação.
- */
+
 public class AppException extends RuntimeException {
     public AppException(String mensagem) {
         super(mensagem);

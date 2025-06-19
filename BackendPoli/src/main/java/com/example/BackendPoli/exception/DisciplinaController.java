@@ -1,4 +1,4 @@
-@DeleteMapping("/{id}")
+/*@DeleteMapping("/{id}")
 public ResponseEntity<Void> apagar(@PathVariable Long id) {
     try {
         disciplinaService.deletarDisciplina(id);
@@ -7,3 +7,4 @@ public ResponseEntity<Void> apagar(@PathVariable Long id) {
         throw ex; // O GlobalExceptionHandler já trata
     }
 }
+*/

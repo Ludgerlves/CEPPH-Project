@@ -1,4 +1,4 @@
-package com.example.BackendPoli.Controller.Aluno;
+package com.example.BackendPoli.Controller.aluno;
 
 import com.example.BackendPoli.Model.dto.request.AlunoRequest;
 import com.example.BackendPoli.Model.dto.response.AlunoResponse;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/alunos")
+@RequestMapping("/api/aluno")
 public class AlunoController {
 
     @Autowired

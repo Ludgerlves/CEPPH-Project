@@ -1,4 +1,4 @@
-package com.example.BackendPoli.service.impl;
+/*package com.example.BackendPoli.service.impl;
 
 import com.example.BackendPoli.Model.dto.request.UsuarioRequest;
 import com.example.BackendPoli.Model.dto.response.UsuarioResponse;
@@ -96,3 +96,4 @@ public class UsuarioServiceImpl implements UsuarioService {
             .build();
     }
 }
+*/

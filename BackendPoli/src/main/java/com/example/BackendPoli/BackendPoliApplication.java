@@ -6,10 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BackendPoliApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BackendPoliApplication.class, args);
-	} {
+    public static void main(String[] args) {
+        SpringApplication.run(BackendPoliApplication.class, args);
+    }
 
-	}
+    {
+
+    }
 
 }
